@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon">
+    <!-- ! google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <!-- ! awosome library -->
+        <link rel="stylesheet" href="./css/all.min.css">
+    <!-- ! bootstarap -->
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- ! main style -->
+        <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body>
+    <div class="container">
+    <header class="text-center">
+        <h1 class="text-capitalize position-relative mt-3">bookmarker</h1>
+    </header>
+    <section class="my-5 py-4 px-3">
+        <h2 class="fs-4 text-center"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h2>
+        <div class="mt-5">
+            <label for="markerName" class="form-label text-capitalize fw-bold"> <i class="fa-solid fa-book-bookmark"></i> site name</label>
+            <input type="text" class="form-control " oninput="inputValided(this)" id="markerName" placeholder="Bookmark Name">
+            <p class="alert-danger bg-danger-subtle rounded-2 mt-2 p-3 d-none">marker Name should contain at lest 3 charachter</p>
+        </div>
+        <div class="my-4">
+            <label for="siteUrl" class="form-label text-capitalize fw-bold"> <i class="fa-solid fa-link"></i> Website URL</label>
+            <input type="text" class="form-control " oninput="inputValided(this)" id="siteUrl" placeholder="Site URL">
+            <p class="alert-danger bg-danger-subtle rounded-2 mt-2 p-3 d-none">example of URL https://www.anexample.com</p>
+        </div>
+        <button class="btn btn-danger px-5 py-1 text-capitalize d-block m-auto" onclick="add()"> submit</button>
+    </section>
+    <footer>
+        <table class="table text-center text-capitalize bg-light">
+            <thead>
+                <tr>
+                    <td>index</td>
+                    <td>website name</td>
+                    <td>visit</td>
+                    <td>delete</td>
+                </tr>
+            </thead>
+            <tbody id="myData">
+            </tbody>
+        </table>
+    </footer>
+    </div>
+
+
+
+
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
